@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour
+public class FollowPlayer1 : MonoBehaviour
 {
     public GameObject player;
-    private Vector3 offsetThirdPerson = new Vector3(1f, 5, -7);
-    private Vector3 offsetFirstPerson = new Vector3(1f, 2.3f, 1.1f);
+    private Vector3 offsetThirdPerson = new Vector3(1f, 4, -7);
+    private Vector3 offsetFirstPerson = new Vector3(1f, 2f, 1f);
     private bool isFirstPerson = false;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class FollowPlayer : MonoBehaviour
     void LateUpdate()
     {
         // Offset the camera behind the player by adding to the player's position
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             // Toggle between first person and third person
             isFirstPerson = !isFirstPerson;
